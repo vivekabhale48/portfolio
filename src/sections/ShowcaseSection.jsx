@@ -44,20 +44,19 @@ const AppShowcase = () => {
   }, []);
 
   return (
-    <div id="work" ref={sectionRef} className="app-showcase">
+    <div id="work" className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <img src="/images/site1.png" alt="Ryde App Interface" />
             </div>
             <div className="text-content"> 
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                Create a similar responsive youtube clone using the RapidApi's.
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
+                An app built with React, Redux, RapidAPI's & TailwindCSS for a fast,
                 user-friendly experience.
               </p>
             </div>
@@ -65,20 +64,20 @@ const AppShowcase = () => {
 
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
-              <div className="image-wrapper bg-[#FFEFDB]">
+              <div className="image-wrapper bg-[#303952]">
                 <img
-                  src="/images/project2.png"
+                  src="/images/site4.png"
                   alt="Library Management Platform"
                 />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>The RealEstate Site - List / Rent your properties</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
-              <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+              <div className="image-wrapper bg-[#6DA5C7]">
+                <img src="/images/site3.png" alt="YC Directory App" />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>Split-Your-Expense - Easyway to split your trip expense</h2>
             </div>
           </div>
         </div>
