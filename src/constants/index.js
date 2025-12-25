@@ -147,42 +147,108 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    company: "Tata Technologies Ltd.",
+    title: "Frontend Developer",
+    date: "April 2025 – Present",
+    review:
+      "Vivek demonstrated exceptional technical ownership while developing the QRT Portal from scratch. His focus on performance, data security, and clean UI elevated the overall product quality.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    projects: [
+      {
+        name: "QRT Portal",
+        techStack: ["React.js 17", "Redux", "ShadCN", "ContextAPI", "Gmaps", "Axios", "CryptoJS"],
+        highlights: [
+          "Architected and developed the QRT Portal from inception, improving rendering speed by 30% and UI consistency.",
+          "Implemented global state management with Redux and Context API.",
+          "Integrated Google Maps API to enhance geolocation accuracy and reduce user task time by 25%.",
+          "Secured API communication with CryptoJS and Axios, reducing security vulnerabilities by 40%.",
+        ],
+      },
+    ],
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Developed and maintained modular frontend architecture for scalable enterprise systems.",
+      "Collaborated with design and backend teams for cohesive project delivery.",
+      "Ensured high performance, secure communication, and efficient state management.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    company: "Royal Cyber Pvt. Ltd.",
+    title: "Software Engineer (Frontend Developer)",
+    date: "June 2022 – March 2025",
+    review:
+      "Vivek’s work at Royal Cyber was instrumental in improving app performance and scalability across multiple projects. His deep understanding of React and Next.js helped deliver impactful results.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    projects: [
+      {
+        name: "Acima.com",
+        techStack: ["Next.js 14.2.6", "Redux", "Material UI", "ContextAPI", "Git", "Jira", "Axios", "AOS"],
+        highlights: [
+          "Spearheaded the development of Acima.com, improving UI responsiveness by 30% and performance by 25%.",
+          "Implemented Context API and Redux for efficient state management and session persistence.",
+          "Enhanced SEO and site performance (40% faster loads) using next-sitemap and optimized images.",
+          "Boosted code quality through Cypress/Jest testing, achieving 35% coverage gain and 20% fewer defects.",
+        ],
+      },
+      {
+        name: "Augusta Active",
+        techStack: ["React.js", "Redux Toolkit", "Material UI", "Git", "Jira", "i18next", "GraphQL"],
+        highlights: [
+          "Developed a responsive e-commerce platform using React.js and Material UI, increasing efficiency by 40%.",
+          "Integrated i18next for multilingual support and GraphQL for data fetching.",
+          "Improved test coverage by 30% and reduced defects by 20% through Cypress/Jest testing.",
+        ],
+      },
+    ],
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed and optimized multiple large-scale React and Next.js applications.",
+      "Implemented localization, testing, and deployment pipelines for smoother CI/CD workflows.",
+      "Collaborated with design teams to maintain pixel-perfect, accessible, and responsive UIs.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    company: "Personal Projects",
+    title: "Frontend Developer (Independent)",
+    date: "2021 – 2022",
+    review:
+      "Vivek’s independent projects showcase a strong command of modern web technologies and UI/UX design. His consistent focus on optimization and user experience stands out.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    projects: [
+      {
+        name: "ReactEstate",
+        techStack: ["React.js", "Firebase", "React Leaflet", "SwiperJs"],
+        highlights: [
+          "Developed a real estate platform with Firebase authentication and map integration.",
+          "Implemented smooth image sliders and geolocation-based property listings.",
+        ],
+      },
+      {
+        name: "TrelloTask (Jira Clone)",
+        techStack: ["Next.js", "NestJS", "MongoDB", "JWT", "TailwindCSS"],
+        highlights: [
+          "Built a full-stack task management app inspired by Jira, featuring drag-and-drop task boards.",
+          "Used JWT authentication and MongoDB for secure and persistent user sessions.",
+        ],
+      },
+      {
+        name: "Mini Cart & Split Your Expense",
+        techStack: ["React.js", "Redux Toolkit", "Lazy Loading", "React Router DOM"],
+        highlights: [
+          "Created interactive apps demonstrating complex state management and performance optimization.",
+          "Implemented lazy loading and Redux Thunk for smooth user experience.",
+        ],
+      },
+    ],
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Designed and deployed responsive, high-performance web apps.",
+      "Experimented with new technologies and libraries to enhance frontend capabilities.",
+      "Deployed apps on Vercel and Firebase for real-world performance testing.",
     ],
   },
 ];
+
 
 const expLogos = [
   {

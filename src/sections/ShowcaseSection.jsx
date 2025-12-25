@@ -16,7 +16,7 @@ const AppShowcase = () => {
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0 },
-      { opacity: 1, duration: 1.5 }
+      { opacity: 1, duration: 1 }
     );
 
     // Animations for each app showcase
@@ -33,7 +33,7 @@ const AppShowcase = () => {
           y: 0,
           opacity: 1,
           duration: 1,
-          delay: 0.3 * (index + 1),
+          delay: 0.1 * (index + 1),
           scrollTrigger: {
             trigger: card,
             start: "top bottom-=100",

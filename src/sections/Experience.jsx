@@ -7,86 +7,22 @@ import TitleHeader from "../components/TitleHeader";
 import GlowCard from "../components/GlowCard";
 
 gsap.registerPlugin(ScrollTrigger);
-
 const Experience = () => {
   useGSAP(() => {
-    // Loop through each timeline card and animate them in
-    // as the user scrolls to each card
-    gsap.utils.toArray(".timeline-card").forEach((card) => {
-      // Animate the card coming in from the left
-      // and fade in
-      gsap.from(card, {
-        // Move the card in from the left
-        xPercent: -100,
-        // Make the card invisible at the start
-        opacity: 0,
-        // Set the origin of the animation to the left side of the card
-        transformOrigin: "left left",
-        // Animate over 1 second
-        duration: 1,
-        // Use a power2 ease-in-out curve
-        ease: "power2.inOut",
-        // Trigger the animation when the card is 80% of the way down the screen
-        scrollTrigger: {
-          // The card is the trigger element
-          trigger: card,
-          // Trigger the animation when the card is 80% down the screen
-          start: "top 80%",
-        },
-      });
-    });
-
-    // Animate the timeline height as the user scrolls
-    // from the top of the timeline to 70% down the screen
-    // The timeline height should scale down from 1 to 0
-    // as the user scrolls up the screen
     gsap.to(".timeline", {
-      // Set the origin of the animation to the bottom of the timeline
       transformOrigin: "bottom bottom",
-      // Animate the timeline height over 1 second
       ease: "power1.inOut",
-      // Trigger the animation when the timeline is at the top of the screen
-      // and end it when the timeline is at 70% down the screen
       scrollTrigger: {
         trigger: ".timeline",
         start: "top center",
         end: "70% center",
-        // Update the animation as the user scrolls
         onUpdate: (self) => {
-          // Scale the timeline height as the user scrolls
-          // from 1 to 0 as the user scrolls up the screen
           gsap.to(".timeline", {
             scaleY: 1 - self.progress,
           });
         },
       },
     });
-
-    // Loop through each expText element and animate them in
-    // as the user scrolls to each text element
-    gsap.utils.toArray(".expText").forEach((text) => {
-      // Animate the text opacity from 0 to 1
-      // and move it from the left to its final position
-      // over 1 second with a power2 ease-in-out curve
-      gsap.from(text, {
-        // Set the opacity of the text to 0
-        opacity: 0,
-        // Move the text from the left to its final position
-        // (xPercent: 0 means the text is at its final position)
-        xPercent: 0,
-        // Animate over 1 second
-        duration: 1,
-        // Use a power2 ease-in-out curve
-        ease: "power2.inOut",
-        // Trigger the animation when the text is 60% down the screen
-        scrollTrigger: {
-          // The text is the trigger element
-          trigger: text,
-          // Trigger the animation when the text is 60% down the screen
-          start: "top 60%",
-        },
-      });
-    }, "<"); // position parameter - insert at the start of the animation
   }, []);
 
   return (
@@ -120,23 +56,65 @@ const Experience = () => {
                       <div className="timeline-logo">
                         <img src={card.logoPath} alt="logo" />
                       </div>
-                      <div>
-                        <h1 className="font-semibold text-3xl">{card.title}</h1>
-                        <p className="my-5 text-white-50">
-                          🗓️&nbsp;{card.date}
-                        </p>
-                        <p className="text-[#839CB5] italic">
-                          Responsibilities
-                        </p>
-                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
-                          {card.responsibilities.map(
-                            (responsibility, index) => (
-                              <li key={index} className="text-lg">
-                                {responsibility}
-                              </li>
-                            )
-                          )}
-                        </ul>
+                      <div className="bg-gradient-to-br from-[#0B1220] to-[#0E1628] border border-white/10 rounded-2xl p-8 space-y-8">
+                        <div>
+                          <h2 className="text-3xl font-bold text-white">
+                            {card.title}
+                          </h2>
+                          <p className="text-lg text-indigo-300 mt-1">
+                            {card.company}
+                          </p>
+                          <p className="text-sm text-white/50 mt-2">
+                            📅 {card.date}
+                          </p>
+                        </div>
+
+                        {/* Projects */}
+                        <div className="space-y-6">
+                          <h3 className="text-xl font-semibold text-white">
+                            Key Projects
+                          </h3>
+
+                          {card.projects.map((project, i) => (
+                            <div
+                              key={i}
+                              className="bg-black/40 border border-white/10 rounded-xl p-6 space-y-4"
+                            >
+                              <h4 className="text-lg font-semibold text-indigo-400">
+                                {project.name}
+                              </h4>
+
+                              <div className="flex flex-wrap gap-2">
+                                {project.techStack.map((tech, idx) => (
+                                  <span
+                                    key={idx}
+                                    className="px-3 py-1 text-xs rounded-full bg-white/10 text-white/80"
+                                  >
+                                    {tech}
+                                  </span>
+                                ))}
+                              </div>
+
+                              <ul className="list-disc ms-5 space-y-2 text-white/60">
+                                {project.highlights.map((point, idx) => (
+                                  <li key={idx}>{point}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          ))}
+                        </div>
+
+                        {/* Responsibilities */}
+                        <div>
+                          <h3 className="text-xl font-semibold text-white mb-3">
+                            Responsibilities
+                          </h3>
+                          <ul className="list-disc ms-5 space-y-2 text-white/60">
+                            {card.responsibilities.map((item, idx) => (
+                              <li key={idx}>{item}</li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
