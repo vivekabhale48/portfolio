@@ -148,11 +148,20 @@ const techStackIcons = [
 const expCards = [
   {
     company: "Tata Technologies Ltd.",
-    title: "Frontend Developer",
+    title: "Software Developer",
     date: "April 2025 – Present",
-    review:
-      "Vivek demonstrated exceptional technical ownership while developing the QRT Portal from scratch. His focus on performance, data security, and clean UI elevated the overall product quality.",
-    imgPath: "/images/exp1.png",
+    card: [
+      {
+        testimonial: 'Mr Siddhesh Dane (BA - TTL)',
+        review:"Vivek demonstrated exceptional technical ownership while developing the QRT Portal from scratch. His focus on performance, data security, and clean UI elevated the overall product quality.",
+        imgPath: "/images/ttl-logo.png",
+      },
+      {
+        testimonial: 'Nikhil Dhumal - (Sr. Solutions Developer - TTL)',
+        review:"Vivek handled the portal development with a high level of ownership and precision. He ensured seamless interaction and robust communication between the frontend and backend systems, resulting in smooth integrations and a stable application. His proactive collaboration, attention to detail, and focus on quality enabled timely delivery of the project with zero escalations. Additionally, his ability to anticipate technical challenges and resolve them early contributed significantly to overall project success.",
+        imgPath: "/images/ttl-logo.png",
+      },
+    ],
     logoPath: "/images/logo1.png",
     projects: [
       {
@@ -176,9 +185,18 @@ const expCards = [
     company: "Royal Cyber Pvt. Ltd.",
     title: "Software Engineer (Frontend Developer)",
     date: "June 2022 – March 2025",
-    review:
-      "Vivek’s work at Royal Cyber was instrumental in improving app performance and scalability across multiple projects. His deep understanding of React and Next.js helped deliver impactful results.",
-    imgPath: "/images/exp2.png",
+    card: [
+      {
+        testimonial: 'Mr Sandeep Kumar (Technical Lead - Royal Cyber lnc.)',
+        review:"Vivek’s work at Royal Cyber was instrumental in improving app performance and scalability across multiple projects. His deep understanding of React and Next.js helped deliver impactful results.",
+        imgPath: "/images/rc-logo.png",
+      },
+      {
+        testimonial: 'Abdul Qadir - (Sr. Angular Developer - Royal Cyber lnc.)',
+        review:"Vivek worked with me across multiple projects and consistently demonstrated strong collaboration, dedication, and professionalism. He was highly reliable, punctual, and consistently delivered high-quality code ahead of deadlines. Vivek was proactive in communication, promptly joining calls and addressing issues whenever critical situations arose or production challenges occurred. On several occasions, he effectively took on a leadership role, guiding the team through complex decisions and ensuring clear technical direction. Additionally, his problem-solving mindset, accountability, and calm approach under pressure played a key role in the successful execution of multiple initiatives.",
+        imgPath: "/images/rc-logo.png",
+      },
+    ],
     logoPath: "/images/logo2.png",
     projects: [
       {
@@ -211,9 +229,13 @@ const expCards = [
     company: "Personal Projects",
     title: "Frontend Developer (Independent)",
     date: "2021 – 2022",
-    review:
-      "Vivek’s independent projects showcase a strong command of modern web technologies and UI/UX design. His consistent focus on optimization and user experience stands out.",
-    imgPath: "/images/exp3.png",
+    card: [
+      {
+        testimonial: 'Mr. Faisal Bashir',
+        review:"Vivek’s independent projects showcase a strong command of modern web technologies and UI/UX design. His consistent focus on optimization and user experience stands out. It was a pleasure collaborating with Vivek Abhale at Royal Cyber Inc. His expertise in the MEAN stack was evident in his consistently high-quality work. Vivek's proactive problem-solving, strong communication, and reliability made him an invaluable asset to our team. I highly recommend Vivek for any software engineering role requiring MEAN stack expertise.",
+        imgPath: "/images/linkedin1.png",
+      },
+    ],
     logoPath: "/images/logo3.png",
     projects: [
       {

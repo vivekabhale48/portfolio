@@ -35,33 +35,37 @@ const Experience = () => {
           title="Professional Work Experience"
           sub="💼 My Career Overview"
         />
-        <div className="mt-32 relative">
+        <div className="mt-20 md:mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {expCards.map((card) => (
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
-                  <GlowCard card={card}>
-                    <div>
-                      <img src={card.imgPath} alt="exp-img" />
-                    </div>
-                  </GlowCard>
+                  {
+                    card?.card?.map((reviewCard) => (
+                      <GlowCard card={reviewCard}>
+                        <div>
+                          <img style={{width: '150px'}} src={reviewCard.imgPath} alt="exp-img" />
+                        </div>
+                      </GlowCard>
+                    ))
+                  }
                 </div>
                 <div className="xl:w-4/6">
                   <div className="flex items-start">
-                    <div className="timeline-wrapper">
+                    <div className="timeline-wrapper hidden md:block">
                       <div className="timeline" />
                       <div className="gradient-line w-1 h-full" />
                     </div>
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
-                      <div className="timeline-logo">
+                      <div className="timeline-logo hidden md:block">
                         <img src={card.logoPath} alt="logo" />
                       </div>
-                      <div className="bg-gradient-to-br from-[#0B1220] to-[#0E1628] border border-white/10 rounded-2xl p-8 space-y-8">
+                      <div className="bg-gradient-to-br from-[#0B1220] to-[#0E1628] border border-white/10 rounded-2xl p-4 md:p-8 space-y-8">
                         <div>
-                          <h2 className="text-3xl font-bold text-white">
+                          <h2 className="text-xl md:text-3xl font-bold text-white">
                             {card.title}
                           </h2>
-                          <p className="text-lg text-indigo-300 mt-1">
+                          <p className="text-md md:text-lg text-indigo-300 mt-1">
                             {card.company}
                           </p>
                           <p className="text-sm text-white/50 mt-2">
@@ -71,7 +75,7 @@ const Experience = () => {
 
                         {/* Projects */}
                         <div className="space-y-6">
-                          <h3 className="text-xl font-semibold text-white">
+                          <h3 className="text-md md:text-xl font-semibold text-white">
                             Key Projects
                           </h3>
 
