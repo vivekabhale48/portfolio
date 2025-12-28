@@ -393,18 +393,22 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    src: 'https://www.instagram.com/_v_i_v_s'
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
+    name: "git",
+    imgPath: "/images/github.svg",
+    src: 'https://github.com/vivekabhale48'
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+    src: 'https://x.com/vivek_abhale'
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    src: 'https://www.linkedin.com/in/vivekabhale48/'
   },
 ];
 
