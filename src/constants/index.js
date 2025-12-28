@@ -99,7 +99,7 @@ const techStackImgs = [
     imgPath: "/images/logos/python.svg",
   },
   {
-    name: "Backend Developer",
+    name: "NodeJs Developer",
     imgPath: "/images/logos/node.png",
   },
   {
@@ -114,31 +114,54 @@ const techStackImgs = [
 
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "ReactJs",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
+    name: "NextJs",
+    modelPath: "/images/next-logo.png",
+    alternateName: "NextJs",
   },
   {
-    name: "Backend Developer",
+    name: "Angular",
+    modelPath: "/images/logos/angular-logo.png",
+    alternateName: "AngularJs",
+  },
+  {
+    name: "Javascript",
+    modelPath: "/images/logos/javascript.png",
+    alternateName: "Javascript",
+  },
+  {
+    name: "Typescript",
+    modelPath: "/images/logos/typescript.png",
+    alternateName: "Typescript",
+  },
+  {
+    name: "NodeJs",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
-    rotation: [0, 0, 0],
+    name: "JQuery",
+    modelPath: "/images/logos/jquery.png",
+    alternateName: "JQuery",
   },
   {
-    name: "Project Manager",
+    name: "MongoDB",
+    modelPath: "/images/logos/mongo-db.png",
+    alternateName: 'MongoDB'
+  },
+  {
+    name: "Java",
+    modelPath: "/images/logos/java.png",
+    alternateName: "Java",
+  },
+  {
+    name: "Git",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
@@ -152,13 +175,15 @@ const expCards = [
     date: "April 2025 – Present",
     card: [
       {
-        testimonial: 'Mr Siddhesh Dane (BA - TTL)',
-        review:"Vivek demonstrated exceptional technical ownership while developing the QRT Portal from scratch. His focus on performance, data security, and clean UI elevated the overall product quality.",
+        testimonial: "Mr Siddhesh Dane (BA - TTL)",
+        review:
+          "Vivek demonstrated exceptional technical ownership while developing the QRT Portal from scratch. His focus on performance, data security, and clean UI elevated the overall product quality.",
         imgPath: "/images/ttl-logo.png",
       },
       {
-        testimonial: 'Nikhil Dhumal - (Sr. Solutions Developer - TTL)',
-        review:"Vivek handled the portal development with a high level of ownership and precision. He ensured seamless interaction and robust communication between the frontend and backend systems, resulting in smooth integrations and a stable application. His proactive collaboration, attention to detail, and focus on quality enabled timely delivery of the project with zero escalations. Additionally, his ability to anticipate technical challenges and resolve them early contributed significantly to overall project success.",
+        testimonial: "Nikhil Dhumal - (Sr. Solutions Developer - TTL)",
+        review:
+          "Vivek handled the portal development with a high level of ownership and precision. He ensured seamless interaction and robust communication between the frontend and backend systems, resulting in smooth integrations and a stable application. His proactive collaboration, attention to detail, and focus on quality enabled timely delivery of the project with zero escalations. Additionally, his ability to anticipate technical challenges and resolve them early contributed significantly to overall project success.",
         imgPath: "/images/ttl-logo.png",
       },
     ],
@@ -166,7 +191,15 @@ const expCards = [
     projects: [
       {
         name: "QRT Portal",
-        techStack: ["React.js 17", "Redux", "ShadCN", "ContextAPI", "Gmaps", "Axios", "CryptoJS"],
+        techStack: [
+          "React.js 17",
+          "Redux",
+          "ShadCN",
+          "ContextAPI",
+          "Gmaps",
+          "Axios",
+          "CryptoJS",
+        ],
         highlights: [
           "Architected and developed the QRT Portal from inception, improving rendering speed by 30% and UI consistency.",
           "Implemented global state management with Redux and Context API.",
@@ -187,13 +220,15 @@ const expCards = [
     date: "June 2022 – March 2025",
     card: [
       {
-        testimonial: 'Mr Sandeep Kumar (Technical Lead - Royal Cyber lnc.)',
-        review:"Vivek’s work at Royal Cyber was instrumental in improving app performance and scalability across multiple projects. His deep understanding of React and Next.js helped deliver impactful results.",
+        testimonial: "Mr Sandeep Kumar (Technical Lead - Royal Cyber lnc.)",
+        review:
+          "Vivek’s work at Royal Cyber was instrumental in improving app performance and scalability across multiple projects. His deep understanding of React and Next.js helped deliver impactful results.",
         imgPath: "/images/rc-logo.png",
       },
       {
-        testimonial: 'Abdul Qadir - (Sr. Angular Developer - Royal Cyber lnc.)',
-        review:"Vivek worked with me across multiple projects and consistently demonstrated strong collaboration, dedication, and professionalism. He was highly reliable, punctual, and consistently delivered high-quality code ahead of deadlines. Vivek was proactive in communication, promptly joining calls and addressing issues whenever critical situations arose or production challenges occurred. On several occasions, he effectively took on a leadership role, guiding the team through complex decisions and ensuring clear technical direction. Additionally, his problem-solving mindset, accountability, and calm approach under pressure played a key role in the successful execution of multiple initiatives.",
+        testimonial: "Abdul Qadir - (Sr. Angular Developer - Royal Cyber lnc.)",
+        review:
+          "Vivek worked with me across multiple projects and consistently demonstrated strong collaboration, dedication, and professionalism. He was highly reliable, punctual, and consistently delivered high-quality code ahead of deadlines. Vivek was proactive in communication, promptly joining calls and addressing issues whenever critical situations arose or production challenges occurred. On several occasions, he effectively took on a leadership role, guiding the team through complex decisions and ensuring clear technical direction. Additionally, his problem-solving mindset, accountability, and calm approach under pressure played a key role in the successful execution of multiple initiatives.",
         imgPath: "/images/rc-logo.png",
       },
     ],
@@ -201,7 +236,16 @@ const expCards = [
     projects: [
       {
         name: "Acima.com",
-        techStack: ["Next.js 14.2.6", "Redux", "Material UI", "ContextAPI", "Git", "Jira", "Axios", "AOS"],
+        techStack: [
+          "Next.js 14.2.6",
+          "Redux",
+          "Material UI",
+          "ContextAPI",
+          "Git",
+          "Jira",
+          "Axios",
+          "AOS",
+        ],
         highlights: [
           "Spearheaded the development of Acima.com, improving UI responsiveness by 30% and performance by 25%.",
           "Implemented Context API and Redux for efficient state management and session persistence.",
@@ -211,7 +255,15 @@ const expCards = [
       },
       {
         name: "Augusta Active",
-        techStack: ["React.js", "Redux Toolkit", "Material UI", "Git", "Jira", "i18next", "GraphQL"],
+        techStack: [
+          "React.js",
+          "Redux Toolkit",
+          "Material UI",
+          "Git",
+          "Jira",
+          "i18next",
+          "GraphQL",
+        ],
         highlights: [
           "Developed a responsive e-commerce platform using React.js and Material UI, increasing efficiency by 40%.",
           "Integrated i18next for multilingual support and GraphQL for data fetching.",
@@ -228,11 +280,12 @@ const expCards = [
   {
     company: "Personal Projects",
     title: "Frontend Developer (Independent)",
-    date: "2021 – 2022",
+    date: "2022 – Present",
     card: [
       {
-        testimonial: 'Mr. Faisal Bashir',
-        review:"Vivek’s independent projects showcase a strong command of modern web technologies and UI/UX design. His consistent focus on optimization and user experience stands out. It was a pleasure collaborating with Vivek Abhale at Royal Cyber Inc. His expertise in the MEAN stack was evident in his consistently high-quality work. Vivek's proactive problem-solving, strong communication, and reliability made him an invaluable asset to our team. I highly recommend Vivek for any software engineering role requiring MEAN stack expertise.",
+        testimonial: "Mr. Faisal Bashir",
+        review:
+          "Vivek’s independent projects showcase a strong command of modern web technologies and UI/UX design. His consistent focus on optimization and user experience stands out. It was a pleasure collaborating with Vivek Abhale at Royal Cyber Inc. His expertise in the MEAN stack was evident in his consistently high-quality work. Vivek's proactive problem-solving, strong communication, and reliability made him an invaluable asset to our team. I highly recommend Vivek for any software engineering role requiring MEAN stack expertise.",
         imgPath: "/images/linkedin1.png",
       },
     ],
@@ -256,7 +309,12 @@ const expCards = [
       },
       {
         name: "Mini Cart & Split Your Expense",
-        techStack: ["React.js", "Redux Toolkit", "Lazy Loading", "React Router DOM"],
+        techStack: [
+          "React.js",
+          "Redux Toolkit",
+          "Lazy Loading",
+          "React Router DOM",
+        ],
         highlights: [
           "Created interactive apps demonstrating complex state management and performance optimization.",
           "Implemented lazy loading and Redux Thunk for smooth user experience.",
@@ -270,7 +328,6 @@ const expCards = [
     ],
   },
 ];
-
 
 const expLogos = [
   {
